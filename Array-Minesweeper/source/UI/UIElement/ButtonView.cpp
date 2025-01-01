@@ -25,11 +25,6 @@ namespace UI
             callback_function = button_callback;
         }
 
-        void ButtonView::setTextureRect(sf::IntRect rect)
-        {
-            image_sprite.setTextureRect(rect);
-        }
-
         void ButtonView::update()
         {
             ImageView::update();
