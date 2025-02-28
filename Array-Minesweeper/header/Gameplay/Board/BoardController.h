@@ -1,20 +1,24 @@
 #pragma once
 #include <sfml/Graphics.hpp>
-#include "../../header/Gameplay/Board/BoardView.h"
-//#include "../../header/Gameplay/Cell/CellController.h"
+#include "../../header/Gameplay/Cell/CellController.h"
 
 namespace Gameplay
 {
     namespace Board
     {
+        class BoardView;
+
         class BoardController
         {
         private:
             BoardView* board_view;
+            Cell::CellController* cell_controller;
 
             void createBoard();
-            void destroy();
+            void initializeCells();
+            void resetBoard();
             void deleteBoard();
+            void destroy();
 
         public:
             static const int number_of_rows = 9;
