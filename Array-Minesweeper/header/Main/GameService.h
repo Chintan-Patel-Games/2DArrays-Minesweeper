@@ -11,7 +11,7 @@ namespace Main
 		MAIN_MENU,
 		GAMEPLAY,
 		INSTRUCTIONS,
-		CREDITS,
+		CREDITS
 	};
 
 	class GameService

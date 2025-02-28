@@ -20,11 +20,7 @@ namespace Gameplay
             background_image = new ImageView();
         }
 
-        BoardView::~BoardView()
-        {
-            delete (board_image);
-            delete (background_image);
-        }
+        BoardView::~BoardView() { destroy(); }
 
         void BoardView::initialize()
         {
@@ -57,5 +53,11 @@ namespace Gameplay
             background_image->render();
             board_image->render();
         }
+
+		void BoardView::destroy()
+		{
+			delete (board_image);
+			delete (background_image);
+		}
     }
 }

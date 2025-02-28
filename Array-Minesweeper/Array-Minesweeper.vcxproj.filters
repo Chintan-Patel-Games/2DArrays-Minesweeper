@@ -24,9 +24,6 @@
     <ClCompile Include="source\Event\EventService.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="source\Main\GameService.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="source\UI\UIService.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -75,15 +72,21 @@
     <ClCompile Include="source\Gameplay\Board\BoardView.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="source\Gameplay\GameplayController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Gameplay\GameplayService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Main\GameService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header\Global\ServiceLocator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="header\Event\EventService.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="header\Main\GameService.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="header\UI\UIService.h">
@@ -135,6 +138,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="header\Gameplay\Board\BoardService.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="header\Gameplay\GameplayController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="header\Gameplay\GameplayService.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="header\Main\GameService.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
