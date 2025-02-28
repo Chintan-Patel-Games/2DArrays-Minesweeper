@@ -12,6 +12,7 @@ namespace Gameplay
         private:
             UI::UIElement::ImageView * board_image;
             UI::UIElement::ImageView* background_image;
+
             const float board_width = 866.f;
             const float board_height = 1080.f;
 
@@ -21,6 +22,7 @@ namespace Gameplay
 
             void initializeBackgroudImage();
             void initializeBoardImage();
+			void destroy();
 
         public:
             BoardView(BoardController* controller);

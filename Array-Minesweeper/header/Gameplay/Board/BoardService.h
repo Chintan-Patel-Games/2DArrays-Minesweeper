@@ -8,13 +8,14 @@ namespace Gameplay
         class BoardService
         {
         private:
-            Board::BoardController* board_controller;
+            BoardController* board_controller;
 
             void destroy();
 
         public:
             BoardService();
             ~BoardService();
+
             void initialize();
             void update();
             void render();

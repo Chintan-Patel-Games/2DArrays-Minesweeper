@@ -1,7 +1,7 @@
 #pragma once
 #include <sfml/Graphics.hpp>
-//#include "../../header/Gameplay/Cell/CellController.h"
 #include "../../header/Gameplay/Board/BoardView.h"
+//#include "../../header/Gameplay/Cell/CellController.h"
 
 namespace Gameplay
 {
@@ -9,6 +9,13 @@ namespace Gameplay
     {
         class BoardController
         {
+        private:
+            BoardView* board_view;
+
+            void createBoard();
+            void destroy();
+            void deleteBoard();
+
         public:
             static const int number_of_rows = 9;
             static const int number_of_colums = 9;
@@ -21,13 +28,6 @@ namespace Gameplay
             void update();
             void render();
             void reset();
-
-        private:
-            BoardView* board_view;
-
-            void createBoard();
-            void destroy();
-            void deleteBoard();
         };
     }
 }

@@ -4,50 +4,22 @@ namespace Gameplay
 {
 	namespace Board
 	{
+		BoardController::BoardController() { board_view = new BoardView(this); }
 
-		BoardController::BoardController()
-		{
-			board_view = new BoardView(this);
-		}
+		BoardController::~BoardController() { destroy(); }
 
-		BoardController::~BoardController()
-		{
-			destroy();
-		}
+		void BoardController::createBoard() {}
 
-		void BoardController::createBoard()
-		{
-			//Yet to implement
-		}
+		void BoardController::initialize() { board_view->initialize(); }
 
-		void BoardController::initialize()
-		{
-			board_view->initialize();
-		}
+		void BoardController::update() { board_view->update(); }
 
-		void BoardController::update()
-		{
-			board_view->update();
-		}
+		void BoardController::render() { board_view->render(); }
 
-		void BoardController::render()
-		{
-			board_view->render();
-		}
+		void BoardController::reset() {}
 
-		void BoardController::reset()
-		{
-			//Yet to implement
-		}
+		void BoardController::deleteBoard() {}
 
-		void BoardController::deleteBoard()
-		{
-			//Yet to implement
-		}
-
-		void BoardController::destroy()
-		{
-			delete(board_view);
-		}
+		void BoardController::destroy() { delete(board_view); }
 	}
 }

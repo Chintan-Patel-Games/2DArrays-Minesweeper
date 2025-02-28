@@ -136,10 +136,12 @@
     <ClCompile Include="source\Gameplay\Board\BoardController.cpp" />
     <ClCompile Include="source\Gameplay\Board\BoardService.cpp" />
     <ClCompile Include="source\Gameplay\Board\BoardView.cpp" />
+    <ClCompile Include="source\Gameplay\GameplayController.cpp" />
+    <ClCompile Include="source\Gameplay\GameplayService.cpp" />
+    <ClCompile Include="source\Main\GameService.cpp" />
     <ClCompile Include="source\UI\Instructions\InstructionsScreenUIController.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="source\Event\EventService.cpp" />
-    <ClCompile Include="source\Main\GameService.cpp" />
     <ClCompile Include="source\Gobal\Config.cpp" />
     <ClCompile Include="source\Graphics\GraphicService.cpp" />
     <ClCompile Include="source\UI\Credits\CreditsScreenUIController.cpp" />
@@ -159,9 +161,11 @@
     <ClInclude Include="header\Gameplay\Board\BoardController.h" />
     <ClInclude Include="header\Gameplay\Board\BoardService.h" />
     <ClInclude Include="header\Gameplay\Board\BoardView.h" />
-    <ClInclude Include="header\Main\GameService.h" />
+    <ClInclude Include="header\Gameplay\GameplayController.h" />
+    <ClInclude Include="header\Gameplay\GameplayService.h" />
     <ClInclude Include="header\Global\Config.h" />
     <ClInclude Include="header\Graphics\GraphicService.h" />
+    <ClInclude Include="header\Main\GameService.h" />
     <ClInclude Include="header\UI\Credits\CreditsScreenUIController.h" />
     <ClInclude Include="header\UI\Interface\IUIController.h" />
     <ClInclude Include="header\UI\MainMenu\MainMenuUIController.h" />
