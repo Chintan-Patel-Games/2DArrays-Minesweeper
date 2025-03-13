@@ -22,7 +22,7 @@ namespace Gameplay
 
 		void CellController::reset() { cell_model->reset(); }
 
-		void CellController::initialize() { cell_view->initialize(); }
+		void CellController::initialize(float cell_width, float cell_height) { cell_view->initialize(cell_width, cell_height); }
 
 		void CellController::update() { cell_view->update(); }
 
