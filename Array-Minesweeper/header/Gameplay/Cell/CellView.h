@@ -6,11 +6,14 @@ namespace Gameplay
     namespace Cell
     {
         class CellController;
+        enum class CellState;
+        enum class CellValue;
 
         class CellView
         {
         private:
             const int tile_size = 32;
+            int slice_count = 12;
 
             UI::UIElement::ButtonView* cell_button;
             CellController* cell_controller;
@@ -20,6 +23,8 @@ namespace Gameplay
         public:
             CellView(CellController* controller);
             ~CellView();
+
+            void setCellTexture();
 
             void initialize();
             void update();
