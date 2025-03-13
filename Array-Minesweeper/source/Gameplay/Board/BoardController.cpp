@@ -17,14 +17,20 @@ namespace Gameplay
 
 		void BoardController::createBoard() { cell_controller = new CellController(); }
 
-		void BoardController::initializeCells() {}
+		void BoardController::initializeCells()
+		{
+			float cell_width = board_view->getCellWidth();
+			float cell_height = board_view->getCellHeight();
+
+			cell_controller->initialize(cell_width, cell_height);
+		}
 
 		void BoardController::resetBoard() {}
 
 		void BoardController::initialize()
 		{
 			board_view->initialize();
-			cell_controller->initialize();
+			initializeCells();
 		}
 
 		void BoardController::update()

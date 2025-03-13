@@ -17,6 +17,20 @@ namespace Gameplay
 
         CellView::~CellView() { delete (cell_button); }
 
+        void CellView::initializeButtonImage(float width, float height)
+        {
+            sf::Vector2f cell_screen_position = getCellScreenPosition();
+            cell_button->initialize("Cell", Global::Config::cells_texture_path, width * slice_count, height, cell_screen_position);
+        }
+
+        sf::Vector2f CellView::getCellScreenPosition()
+        {
+            float x_screen_position = cell_left_offset;
+            float y_screen_position = cell_top_offset;
+
+            return sf::Vector2f(x_screen_position, y_screen_position);
+        }
+
         void CellView::setCellTexture()
         {
             // Retrieves the cell's current value and converts it to an integer index
@@ -43,9 +57,7 @@ namespace Gameplay
             }
         }
 
-        void CellView::initialize() { initializeButtonImage(tile_size * 3, tile_size * 3); }
-
-        void CellView::initializeButtonImage(float width, float height) { cell_button->initialize("Cell", Global::Config::cells_texture_path, width * slice_count, height, sf::Vector2f(0, 0)); }
+        void CellView::initialize(float width, float height) { initializeButtonImage(width, height); }
 
         void CellView::update() { cell_button->update(); }
 
